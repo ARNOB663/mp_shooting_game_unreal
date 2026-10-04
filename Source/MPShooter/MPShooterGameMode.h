@@ -38,7 +38,6 @@ public:
 	virtual void OnPlayerKilled(AMPShooterCharacter* Victim, AController* VictimController, AController* Killer, const FString& WeaponName);
 
 	virtual AActor* ChoosePlayerStart_Implementation(AController* Player) override;
-	virtual bool ShouldSpawnAtStartSpot_Implementation(AController* Player) override;
 
 protected:
 

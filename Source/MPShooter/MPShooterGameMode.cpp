@@ -85,13 +85,10 @@ void AMPShooterGameMode::RespawnPlayer(AController* Controller)
 		OldPawn->SetLifeSpan(DeadBodyLifeSpan);
 	}
 
-	RestartPlayer(Controller);
-}
+	// forget the old spawn point so ChoosePlayerStart picks a new one
+	Controller->StartSpot = nullptr;
 
-bool AMPShooterGameMode::ShouldSpawnAtStartSpot_Implementation(AController* Player)
-{
-	// always pick a new start (see ChoosePlayerStart)
-	return false;
+	RestartPlayer(Controller);
 }
 
 AActor* AMPShooterGameMode::ChoosePlayerStart_Implementation(AController* Player)
