@@ -32,3 +32,6 @@ git push -u origin <branch>
 
 ## Can't build here?
 Cloud AI sessions can't run Unreal. Say so, keep C++ changes small, and ask the owner to compile and report errors.
+
+## Shooter code
+See `Docs/SHOOTER_GUIDE.md` for how the weapons, networking, animation and HUD code fit together, and the asset paths it uses.

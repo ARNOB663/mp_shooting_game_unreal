@@ -18,13 +18,15 @@ public class MPShooter : ModuleRules
 			"StateTreeModule",
 			"GameplayStateTreeModule",
 			"UMG",
-			"Slate"
+			"Slate",
+			"Niagara"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
 		PublicIncludePaths.AddRange(new string[] {
 			"MPShooter",
+			"MPShooter/Shooter",
 			"MPShooter/Variant_Platforming",
 			"MPShooter/Variant_Platforming/Animation",
 			"MPShooter/Variant_Combat",
