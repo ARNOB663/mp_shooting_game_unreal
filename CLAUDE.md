@@ -18,10 +18,10 @@ Unreal Engine 5.8 C++ project (`MPShooter`, Third Person template). Read this be
 git status
 git add <paths>
 git commit -m "Short summary of the change"
-git push -u origin <branch>
+git push origin main
 ```
 - One topic per commit (e.g. "Add L85 rifle", "Add FP/TP camera toggle").
-- Don't push to `main` directly from an AI session; use a feature branch and let the owner merge.
+- Work directly on `main` (the owner's choice). Pull first (`git pull origin main`) so pushes are fast-forward.
 - Never force-push `main` or rewrite pushed history.
 - If a push fails with a network error, retry with backoff (2s, 4s, 8s, 16s).
 
